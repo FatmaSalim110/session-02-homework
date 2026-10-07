@@ -11,3 +11,13 @@
 //   Digit sum of 2026 = 10
 
 // your code here
+const number = 2026;
+let n = number;
+let sum = 0;
+
+while (n > 0) {
+    sum += n % 10;
+    n = Math.floor(n / 10);
+}
+
+console.log(`Digit sum of ${number} = ${sum}`);
